@@ -2,6 +2,10 @@
 @couleur-soleil1: #f1c40f;
 @couleur-soleil2: #e67e22;
 @profondeur: 0;
+@taille-soleil: 300px;
+@minheight-mobile: 1500px;
+@minheight-bureau: 500px
+
 body,
 html {
   height: 100%;
@@ -16,7 +20,7 @@ html {
 .contenu {
   position: relative;
   background-color: @couleur-fond;
-  min-height:500px;
+  min-height:@minheight-bureau;
   width: 100%;
   line-height: 40px;
   margin: auto;
@@ -151,10 +155,6 @@ html {
   overflow: hidden;
 }
 
-body {
-  font: 100% / 1.5 Arial;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -222,8 +222,8 @@ h1 {
 
 
 .svg-soleil{
-  width:300px;
-  height:300px;
+  width:@taille-soleil;
+  height:@taille-soleil;
   transform-origin:50% 50%;
   animation: spin 25s linear infinite,soleil-glow 3s 0s linear infinite;
 
@@ -254,6 +254,6 @@ h1 {
         flex-direction:column;
     }
     .contenu{
-      min-height: 1500px;
+      min-height: @minheight-mobile;
     }
 }
