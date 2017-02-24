@@ -59,7 +59,7 @@ html {
 
 .parallax__calque_devant {
   transform: translateZ(-1px) scale(2);
-  background-image: url("../img/mounts_1.svg");
+  background-image: url("../img/devant.svg");
   margin-top: 78%;
   z-index: -3;
 }
@@ -67,7 +67,7 @@ html {
 .parallax__calque_foret1 {
   position: fixed;
   transform: translateZ(-2px) scale(3);
-  background-image: url("../img/img_1.svg");
+  background-image: url("../img/foret_1.svg");
   margin-top: 85%;
   z-index: -4;
 }
@@ -75,7 +75,7 @@ html {
 .parallax__calque_foret2 {
   position: fixed;
   transform: translateZ(-3px) scale(4);
-  background-image: url("../img/img_2.svg");
+  background-image: url("../img/foret_2.svg");
   margin-top: 105%;
   z-index: -5;
 }
@@ -83,7 +83,7 @@ html {
 .parallax__calque_foret3 {
   position: fixed;
   transform: translateZ(-4px) scale(5);
-  background-image: url("../img/img_3.svg");
+  background-image: url("../img/foret_3.svg");
   margin-top: 125%;
   z-index: -6;
 }
@@ -91,7 +91,7 @@ html {
 .parallax__calque_montagne1 {
   position: fixed;
   transform: translateZ(-5px) scale(6);
-  background-image: url("../img/img_4.svg");
+  background-image: url("../img/montagne_1.svg");
   margin-top: 40%;
   z-index: -7;
 }
@@ -99,7 +99,7 @@ html {
 .parallax__calque_montagne2{
   position: fixed;
   transform: translateZ(-6px) scale(7);
-  background-image: url("../img/img_5.svg");
+  background-image: url("../img/montagne_2.svg");
   margin-top: 20%;
   z-index: -8;
 }
