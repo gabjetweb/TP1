@@ -111,10 +111,6 @@ html {
   background-image: url("../img/logo.svg");
   right: 0px;
   width: 30vw;
-  margin: auto;
-  margin-right: -50%;
-  margin-top: 13%;
-  color: white;
   font-size: 50px;
   letter-spacing: 10px;
   text-align: center;
@@ -123,13 +119,21 @@ html {
   z-index: -6;
 }
 
+.parallax__calque_soleil{
+  position: fixed;
+  transform: translateZ(-4px) scale(5);
+  margin-top: 10%;
+  z-index: -10;
+}
+
+
 .parallax__calque_bg {
   position: fixed;
   transform: translateZ(-5px) scale(6);
   background-image: url("../img/bg.svg");
   background-size: 100%;
   height: 100vh;
-  z-index: -10;
+  z-index: -11;
 }
 
 .base {
@@ -212,23 +216,51 @@ h1 {
     align-self: auto;
 }
 
-#groupeSVG{
+.groupeSVG{
   stroke:white;
   fill:none; 
   stroke-width:2;
 }
 
-#lesSVG{
+.lesSVG{
  width:100%; 
  height:100%;
 }
+
+
+.svg-soleil{
+  width:300px;
+  height:300px;
+  transform-origin:50% 50%;
+  animation: spin 25s linear infinite,soleil-glow 3s 0s linear infinite;
+
+}
+
+#soleil{
+  stroke-width:18;
+  stroke-dasharray:2;
+  stroke-dashoffset:2;
+}
+
+@keyframes soleil-glow { 
+  0% { fill: #f1c40f; stroke:#f1c40f;}
+  50% { fill: #e67e22; stroke:#e67e22;}
+  100% { fill: #f1c40f; stroke:#f1c40f;}
+}
+
+@keyframes spin{
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     .row {
         flex-direction:column;
     }
-    .content{
-      min-height: 3000px;
+    .contenu{
+      min-height: 1500px;
     }
 }
